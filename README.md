@@ -35,11 +35,12 @@ export CFLAGS="--sysroot=/home/knap-linux/rpi/sysroot"
 export CXXFLAGS="--sysroot=/home/knap-linux/rpi/sysroot"
 export LDFLAGS="--sysroot=/home/knap-linux/rpi/sysroot"
 
-export PKG_CONFIG_SYSROOT_DIR=/home/knap-linux/rpi/sysroot
-export PKG_CONFIG_PATH=/home/knap-linux/rpi/sysroot/usr/lib/pkgconfig
+export CXXFLAGS="-I/home/knap-linux/rpi/sysroot/usr/include/c++/11.5.0"
+export LDFLAGS="-L/home/knap-linux/rpi/sysroot/usr/lib"
 
 in osnovna komanda:
-../qt-everywhere-src-5.15.7/configure -release     -device linux-rasp-pi5-aarch64     -device-option CROSS_COMPILE=/home/knap-linux/rpi/tools/gcc-linaro-14.0.0-2023.06-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-     -opensource -confirm-license     -opengl es2     -eglfs -pkg-config
+../qt-everywhere-src-5.15.7/configure -release     -device linux-rasp-pi5-aarch64     -device-option CROSS_COMPILE=/home/knap-linux/rpi/tools/gcc-linaro-14.0.0-2023.06-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-     -opensource -confirm-license     -opengl es2     -eglfs -pkg-config -v
+
 
 
 
