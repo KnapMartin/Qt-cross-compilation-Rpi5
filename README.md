@@ -1,6 +1,9 @@
 # Qt-cross-compilation-Rpi5
 Guide for setting up cross-compilation for Qt projects on Raspberry pi 5
 
+# get cross compiler (and copy to sysroot/tools)
+sudo wget https://snapshots.linaro.org/gnu-toolchain/11.3-2022.06-1/aarch64-linux-gnu/gcc-linaro-11.3.1-2022.06-x86_64_aarch64-linux-gnu.tar.xz
+
 # get the source
 sudo wget https://download.qt.io/archive/qt/5.15/5.15.7/single/qt-everywhere-opensource-src-5.15.7.tar.xz
 
