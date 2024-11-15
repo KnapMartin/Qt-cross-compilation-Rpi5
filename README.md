@@ -41,6 +41,9 @@ export LDFLAGS="-L/home/knap-linux/rpi/sysroot/usr/lib"
 in osnovna komanda:
 ../qt-everywhere-src-5.15.7/configure -release     -device linux-rasp-pi5-aarch64     -device-option CROSS_COMPILE=/home/knap-linux/rpi/tools/gcc-linaro-14.0.0-2023.06-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-     -opensource -confirm-license     -opengl es2     -eglfs -pkg-config -v
 
+ali cela:
+../qt-everywhere-src-5.15.7/configure -release     -device linux-rasp-pi5-aarch64     -device-option CROSS_COMPILE=/home/knap-linux/rpi/tools/gcc-linaro-14.0.0-2023.06-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-     -opensource -confirm-license     -opengl es2     -eglfs -skip qtscript -skip qtwayland -skip qtwebengine -nomake tests -make libs -pkg-config -no-use-gold-linker -v -recheck
+
 
 
 
