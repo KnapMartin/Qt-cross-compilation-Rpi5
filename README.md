@@ -1,3 +1,5 @@
+# Source: https://github.com/UvinduW/Cross-Compiling-Qt-for-Raspberry-Pi-4
+
 # Qt-cross-compilation-Rpi5
 Guide for setting up cross-compilation for Qt projects on Raspberry pi 5
 
@@ -16,10 +18,10 @@ omitted
 # copy aarch64 toolchain to /rpi/tools/
 
 # synch
-sudo rsync -avz --rsync-path="rsync" --delete root@192.168.2.2:/lib sysroot
-sudo rsync -avz --rsync-path="rsync" --delete root@192.168.2.2:/usr/include sysroot/usr
-sudo rsync -avz --rsync-path="rsync" --delete root@192.168.2.2:/usr/lib sysroot/usr
-sudo rsync -avz --rsync-path="rsync" --delete root@192.168.2.2:/opt/vc sysroot/opt
+sudo rsync -avz --rsync-path="rsync" --delete root@192.168.2.2:/lib sysroot \
+sudo rsync -avz --rsync-path="rsync" --delete root@192.168.2.2:/usr/include sysroot/usr \
+sudo rsync -avz --rsync-path="rsync" --delete root@192.168.2.2:/usr/lib sysroot/usr \
+sudo rsync -avz --rsync-path="rsync" --delete root@192.168.2.2:/opt/vc sysroot/opt \
 
 # add rasp-pi5 configuration to mkspec
 
